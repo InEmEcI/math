@@ -9,6 +9,11 @@ const min = 1;
 const max = 30; 
 */
 
+/*
+const min = 1;
+const max = 40; 
+*/
+
 const min = 1;
 const max = 10; 
 
