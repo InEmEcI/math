@@ -1,0 +1,29 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Математика</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />		
+		<!-- Подключаем JS -->
+		<script src="js/scrips.js" defer></script>	
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+	<div id="urovnenie">	
+		<span id = "min"></span>
+		<span id = "plus">+</span>
+		<span id = "max"></span>
+		<span>=</span>		
+		<input id = "test">
+		<button onclick="insertNumber1(); insertNumber2()">вставить</button>
+		<button onclick="test()">Проверить</button>
+	</div>
+
+	</body>
+</html>

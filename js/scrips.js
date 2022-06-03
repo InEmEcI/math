@@ -21,9 +21,11 @@ function getRandomInt(min, max) {
     document.getElementById("min").innerHTML= a;           
 };  
 
-function insertNumber2(){
+  function insertNumber2(){
     document.getElementById('max').innerHTML= b;           
 };
+
+
 
 let c = a + b;
 Number(c);
@@ -35,17 +37,19 @@ function test(){
   Number(d);
   console.log(d);
   //alert(d); 
- 
-
-  if (c >= d){
-    alert('МЕНЬШЕ ИЛИ РАВНО 10');
-    if (c = a + b){
-      alert('ПРАВИЛЬНО');
-    } else if (c != a + b) {
-      alert('НЕ правильно');
-    };
-  } else if (c > 10){
-    alert('БОЛЬШЕ 10');  
-  };   
 };
+
+if (c <= 10){
+  alert('МЕНЬШЕ ИЛИ РАВНО 10');
+    if (c == d){
+      alert('ПРАВИЛЬНО');
+        } else if (c != d) {
+          alert('НЕ правильно');
+        };
+  } else if (c > 10){
+     while (c < 10){
+
+     };  
+  };   
+
     
