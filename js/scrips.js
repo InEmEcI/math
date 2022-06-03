@@ -45,21 +45,23 @@ console.log(c);
 function test(){
   let d = document.getElementById('test').value;
   Number(d);
-  console.log(d);
-  //alert(d); 
+  alert(d);
+  //alert(d);
+  
+  if (c <= 10){
+    alert('МЕНЬШЕ ИЛИ РАВНО 10');
+      if (c == d){
+        alert('ПРАВИЛЬНО');
+          } else if (c != d) {
+            alert('НЕ правильно');
+          };
+    } else if (c > 10){
+       while (c < 10){
+  
+       };  
+    };
 };
 
-if (c <= 10){
-  alert('МЕНЬШЕ ИЛИ РАВНО 10');
-    if (c == d){
-      alert('ПРАВИЛЬНО');
-        } else if (c != d) {
-          alert('НЕ правильно');
-        };
-  } else if (c > 10){
-     while (c < 10){
-
-     };  
-  };   
+   
 
     
