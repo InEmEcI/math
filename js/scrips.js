@@ -1,22 +1,7 @@
 
-/*
-const min = 1;
-const max = 20; 
-*/
-
-/*
-const min = 1;
-const max = 30; 
-*/
-
-/*
-const min = 1;
-const max = 40; 
-*/
-
 const min = 1;
 const max = 5; 
-
+const predel = 10;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -25,42 +10,66 @@ function getRandomInt(min, max) {
   };
 
   let a = getRandomInt(min, max);
-  let b = getRandomInt(min, max);    
+  let b = getRandomInt(min, max);   
+  let d = getRandomInt(max, predel);
   
-  function insertNumber1(){
-    document.getElementById("min").innerHTML= a;           
+  function insertNumberA(){   
+    document.getElementById('min').innerHTML= a;               
 };  
 
-  function insertNumber2(){
+  function insertNumberB(){   
     document.getElementById('max').innerHTML= b;           
 };
 
 
 
-let c = a + b;
-Number(c);
-console.log(c);
-//alert(c);
 
-function test(){
-  let d = document.getElementById('test').value;
+function insertNumberDminus(){
+  // document.getElementById("min").innerHTML= ' ';
+   document.getElementById('numberD').innerHTML= d;               
+};  
+
+ function insertNumberBminus(){
+  // document.getElementById('max').innerHTML= ' ';
+   document.getElementById('numberB').innerHTML= b;           
+};
+
+/* ----------------------------------------*/
+
+
+
+let c = a + b; 
+Number(c);
+
+function testPlus(){
+  let d = document.getElementById('testPlus').value;
   Number(d);
-  alert(d);
-  //alert(d);
-  
-  if (c <= 10){
-    alert('МЕНЬШЕ ИЛИ РАВНО 10');
-      if (c == d){
-        alert('ПРАВИЛЬНО');
-          } else if (c != d) {
+    
+  if (c == d)
+    {
+    alert('ПРАВИЛЬНО');
+    } else {
             alert('НЕ правильно');
           };
-    } else if (c > 10){
-       while (c < 10){
-  
-       };  
     };
-};
+
+/* --- ДОПИСАТЬ ФУНКЦИЮ ПОДСЧЁТА ПРИ МИНУСЕ --- */
+let e = d - b;
+Number(e);  
+
+function testMinus(){
+      let d = document.getElementById('testMinus').value;
+      Number(d);
+        
+      if (c == d)
+        {
+        alert('ПРАВИЛЬНО');
+        } else {
+                alert('НЕ правильно');
+              };
+        };
+
+
 
    
 
