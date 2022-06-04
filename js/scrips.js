@@ -9,9 +9,9 @@ function getRandomInt(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min);
   };
 
-  let a = getRandomInt(min, max);
-  let b = getRandomInt(min, max);   
-  let d = getRandomInt(max, predel);
+  let a = getRandomInt(min, max); // от 1 до 5
+  let b = getRandomInt(min, max);  // от 1 до 5
+  let d = getRandomInt(max, predel); // от 5 до 10
   
   function insertNumberA(){   
     document.getElementById('min').innerHTML= a;               
@@ -38,12 +38,12 @@ function insertNumberDminus(){
 
 
 
-let c = a + b; 
+let c = a + b; //правильный результат сложения 
 Number(c);
 
 function testPlus(){
   let d = document.getElementById('testPlus').value;
-  Number(d);
+  Number(d); //введённый ответ сложения
     
   if (c == d)
     {
@@ -54,14 +54,18 @@ function testPlus(){
     };
 
 /* --- ДОПИСАТЬ ФУНКЦИЮ ПОДСЧЁТА ПРИ МИНУСЕ --- */
-let e = d - b;
-Number(e);  
+
+
+// правильныый результат вычитания
+let e = d - b; //d = getRandomInt(max, predel); // от 5 до 10
+Number(e);
+
 
 function testMinus(){
       let d = document.getElementById('testMinus').value;
-      Number(d);
+      Number(d); // введённый результат вычитания
         
-      if (c == d)
+      if (e == d)
         {
         alert('ПРАВИЛЬНО');
         } else {
