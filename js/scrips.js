@@ -15,7 +15,7 @@ const max = 40;
 */
 
 const min = 1;
-const max = 10; 
+const max = 5; 
 
 
 function getRandomInt(min, max) {
