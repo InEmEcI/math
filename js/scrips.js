@@ -9,29 +9,29 @@ function getRandomInt(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min);
   };
 
+// это переменные для сложения  
   let a = getRandomInt(min, max); // от 1 до 5
   let b = getRandomInt(min, max);  // от 1 до 5
   let d = getRandomInt(max, predel); // от 5 до 10
+
+ // это переменные для вычитания
+  let y = getRandomInt(min, max);  // от 1 до 5
+  let z = getRandomInt(max, predel); // от 5 до 10
   
-  function insertNumberA(){   
-    document.getElementById('min').innerHTML= a;               
+function insertNumberA(){   
+    document.getElementById('min').innerHTML = a;               
 };  
 
-  function insertNumberB(){   
-    document.getElementById('max').innerHTML= b;           
+function insertNumberB(){   
+    document.getElementById('max').innerHTML = b;           
 };
 
-
-
-
-function insertNumberDminus(){
-  // document.getElementById("min").innerHTML= ' ';
-   document.getElementById('numberD').innerHTML= d;               
+function insertNumberZminus(){  
+   document.getElementById('numberZ').innerHTML = z;               
 };  
 
- function insertNumberBminus(){
-  // document.getElementById('max').innerHTML= ' ';
-   document.getElementById('numberB').innerHTML= b;           
+ function insertNumberYminus(){  
+   document.getElementById('numberY').innerHTML = y;           
 };
 
 /* ----------------------------------------*/
@@ -57,15 +57,21 @@ function testPlus(){
 // на данный момент он берёт вторую цифру из уровнения сложения!
 
 // правильныый результат вычитания
-let e = d - b; //d = getRandomInt(max, predel); // от 5 до 10
-Number(e);
+let x = z - y; // (z = getRandomInt(max, predel); // от 5 до 10)
+Number(x);
+
+ /*
+ это переменные для вычитания
+ let y = getRandomInt(min, max);  // от 1 до 5
+ let z = getRandomInt(max, predel); // от 5 до 10
+*/
 
 
 function testMinus(){
       let d = document.getElementById('testMinus').value;
       Number(d); // введённый результат вычитания
         
-      if (e == d)
+      if (x == d)
         {
         alert('ПРАВИЛЬНО');
         } else {
