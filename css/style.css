@@ -16,6 +16,9 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+body{
+    background-image: ;
+}
 
 span{
     margin-right: 14px;
@@ -30,4 +33,16 @@ input{
 
 button{
     margin-left: 24px;
+}
+
+#urovnenie1{
+    width: 36%;
+    padding: 14px;
+    border: 4px double rgb(117, 117, 52); /* Параметры границы */        
+}
+
+#urovnenie2{
+    width: 36%;    
+    padding: 14px;
+    border: 4px double rgb(71, 52, 117); /* Параметры границы */        
 }
