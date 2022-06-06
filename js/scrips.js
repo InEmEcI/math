@@ -76,3 +76,26 @@ function testMinus(){
                 alert('НЕ правильно');
               };
         };
+
+
+let rgb1 = document.getElementById('urovnenie1');        
+let rgb2 = document.getElementById('urovnenie2');        
+
+function setRandomColor1() {
+   let letters = '0123456789ABCDEF';
+   let color = '#';
+   for (let i = 0; i < 6; i++) {
+      color = color + letters[Math.floor(Math.random() * 16)];
+    }
+    rgb1.style.borderColor = color;
+};
+
+function setRandomColor2() {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+     color = color + letters[Math.floor(Math.random() * 16)];
+   }
+   rgb2.style.borderColor = color;
+};
+
