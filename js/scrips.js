@@ -37,6 +37,24 @@ function insertNumberZminus(){
 /* ----------------------------------------*/
 
 
+function changeBackgroundColorToGreen1(){
+  document.getElementById('urovnenie1').style.background = 'green';
+};
+
+function changeBackgroundColorToRed1(){
+  document.getElementById('urovnenie1').style.background = 'red';
+};
+
+function changeBackgroundColorToGreen2(){
+  document.getElementById('urovnenie2').style.background = 'green';
+};
+
+function changeBackgroundColorToRed2(){
+  document.getElementById('urovnenie2').style.background = 'red';
+};
+
+/* ----------------------------------------*/
+
 
 let c = a + b; //правильный результат сложения 
 Number(c);
@@ -68,12 +86,14 @@ Number(x);
 
 
 function victory(){
+  changeBackgroundColorToGreen1();
   audio = new Audio(); // Создаём новый элемент Audio    
   audio.src = './sounds/victory.mp3'; // Путь к звуковому файлу
   audio.play();  
 };
 
 function wrong(){
+  changeBackgroundColorToRed2();
   audio = new Audio(); // Создаём новый элемент Audio    
   audio.src = './sounds/wrong.mp3'; // Путь к звуковому файлу
   audio.play();  
@@ -85,12 +105,10 @@ function testMinus(){
       Number(d); // введённый результат вычитания
         
       if (x == d)
-        {
-        victory();
-        //alert('ПРАВИЛЬНО');
-        } else {
-                wrong();
-                //alert('НЕ правильно');
+        {        
+        victory();        
+        } else {                
+                wrong();                
               };
         };
 
