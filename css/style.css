@@ -25,6 +25,7 @@ body{
 span{
     margin-right: 14px;
     font-size: 36px;
+    font-weight: 900;
 }
 
 input{
@@ -38,13 +39,13 @@ button{
 }
 
 #urovnenie1{
-    width: 36%;
+    width: 40%;
     padding: 14px;
-    border: 4px double rgb(117, 117, 52); /* Параметры границы */        
+    border: 10px solid black; /* Параметры границы */        
 }
 
 #urovnenie2{
-    width: 36%;    
+    width: 40%;    
     padding: 14px;
-    border: 4px double rgb(71, 52, 117); /* Параметры границы */        
+    border: 10px solid black; /* Параметры границы */        
 }

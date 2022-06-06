@@ -47,9 +47,11 @@ function testPlus(){
     
   if (c == d)
     {
-    alert('ПРАВИЛЬНО');
+      victory();
+    //alert('ПРАВИЛЬНО');
     } else {
-            alert('НЕ правильно');
+            wrong()
+            //alert('НЕ правильно');
           };
     };
 
@@ -65,15 +67,30 @@ Number(x);
 */
 
 
+function victory(){
+  audio = new Audio(); // Создаём новый элемент Audio    
+  audio.src = './sounds/victory.mp3'; // Путь к звуковому файлу
+  audio.play();  
+};
+
+function wrong(){
+  audio = new Audio(); // Создаём новый элемент Audio    
+  audio.src = './sounds/wrong.mp3'; // Путь к звуковому файлу
+  audio.play();  
+};
+
+
 function testMinus(){
       let d = document.getElementById('testMinus').value;
       Number(d); // введённый результат вычитания
         
       if (x == d)
         {
-        alert('ПРАВИЛЬНО');
+        victory();
+        //alert('ПРАВИЛЬНО');
         } else {
-                alert('НЕ правильно');
+                wrong();
+                //alert('НЕ правильно');
               };
         };
 
@@ -98,4 +115,8 @@ function setRandomColor2() {
    }
    rgb2.style.borderColor = color;
 };
+
+
+
+
 
