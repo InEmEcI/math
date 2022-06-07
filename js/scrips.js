@@ -1,16 +1,25 @@
+
+
+let min = 1;
+let max = 5; 
+let predel = 10;
+
+/*
+function ot1do10(){
+  let min = 1;
+  let max = 5; 
+  let predel = 10;
+};
 /*
 
-В первом уровнение когда НЕправильно фон на красный не меняется!
-
-Во втором уровнение когда правильно фон на зелёный не меняется!
-
-
+/*
+function ot1do20(){
+  let min = 1;
+  let max = 5; 
+  let predel = 20;
+  return min, max, predel;
+};
 */
-
-
-const min = 1;
-const max = 5; 
-const predel = 10;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -74,10 +83,12 @@ function testPlus(){
     
   if (c == d)
     {
-      victory();
+      changeBackgroundColorToGreen1();
+      victorySound();
     //alert('ПРАВИЛЬНО');
     } else {
-            wrong()
+            changeBackgroundColorToRed1();
+            wrongSound()
             //alert('НЕ правильно');
           };
     };
@@ -94,15 +105,13 @@ Number(x);
 */
 
 
-function victory(){
-  changeBackgroundColorToGreen1();
+function victorySound(){  
   audio = new Audio(); // Создаём новый элемент Audio    
   audio.src = './sounds/victory.mp3'; // Путь к звуковому файлу
   audio.play();  
 };
 
-function wrong(){
-  changeBackgroundColorToRed2();
+function wrongSound(){  
   audio = new Audio(); // Создаём новый элемент Audio    
   audio.src = './sounds/wrong.mp3'; // Путь к звуковому файлу
   audio.play();  
@@ -114,10 +123,12 @@ function testMinus(){
       Number(d); // введённый результат вычитания
         
       if (x == d)
-        {        
-        victory();        
-        } else {                
-                wrong();                
+        {
+          changeBackgroundColorToGreen2();  
+          victorySound();        
+        } else {
+                changeBackgroundColorToRed2();                
+                wrongSound();                
               };
         };
 
