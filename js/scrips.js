@@ -4,7 +4,8 @@ let min = 1;
 let max = 5; 
 let predel = 10;
 
-/*
+
+
 function ot1do10(){
   let min = 1;
   let max = 5; 

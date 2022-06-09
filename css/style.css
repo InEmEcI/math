@@ -43,13 +43,13 @@ button{
 #urovnenie1{
     width: 40%;
     padding: 14px;
-    border: 10px solid black; /* Параметры границы */        
-    font-family:sans-serif; 
+    border: 10px solid green; /* Параметры границы */        
+    font-family:sans-serif;     
 }
 
 #urovnenie2{
     width: 40%;    
     padding: 14px;
-    border: 10px solid black; /* Параметры границы */       
+    border: 10px solid red; /* Параметры границы */       
     font-family:sans-serif; 
 }
