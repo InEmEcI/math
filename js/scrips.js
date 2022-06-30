@@ -38,11 +38,11 @@ function getRandomInt(min, max) {
   let z = getRandomInt(max, predel); // от 5 до 10
   
 function insertNumberA(){   
-    document.getElementById('min').innerHTML = a;               
+    document.getElementById('numberA').innerHTML = a;               
 };  
 
 function insertNumberB(){   
-    document.getElementById('max').innerHTML = b;           
+    document.getElementById('numberB').innerHTML = b;           
 };
 
 function insertNumberZminus(){  
@@ -85,12 +85,10 @@ function testPlus(){
   if (c == d)
     {
       changeBackgroundColorToGreen1();
-      victorySound();
-    //alert('ПРАВИЛЬНО');
+      victorySound();    
     } else {
             changeBackgroundColorToRed1();
-            wrongSound()
-            //alert('НЕ правильно');
+            wrongSound();
           };
     };
 
