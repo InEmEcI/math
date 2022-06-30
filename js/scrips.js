@@ -6,21 +6,21 @@ let predel = 10;
 
 
 
-function ot1do10(){
+function ot1do10(){  // должна вснавлять эти значания и уже с ними выполнять все остальные действия
   let min = 1;
   let max = 5; 
   let predel = 10;
 };
-/*
 
-/*
-function ot1do20(){
+
+
+function ot1do20(){  // должна вснавлять эти значания и уже с ними выполнять все остальные действия
   let min = 1;
-  let max = 5; 
+  let max = 10; 
   let predel = 20;
   return min, max, predel;
 };
-*/
+
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);

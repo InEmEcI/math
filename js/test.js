@@ -1,4 +1,23 @@
 
+
+let arr = [10,9,8,7,6,5,4,3,2,1,0];
+let N = arr.length;
+let j = N - 1;
+let i = 0;
+let temp;
+
+
+ for (j; j > 0; j--) {
+    for (let i = 0; i < j; i++) {
+      if (arr[i] > arr[i + 1]) {
+        temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+      };
+    };
+  };
+
+
 /*
 const config = {
     level: 1,
